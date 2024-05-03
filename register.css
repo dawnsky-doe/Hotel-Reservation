@@ -1,0 +1,84 @@
+/* body{
+    background:rgb(101, 136, 100);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+form{
+    background:rgb(253, 255, 253);
+    width: 28%;
+    border-radius: 6px;
+    margin: 100px auto;
+    padding: 40px;
+    margin-top: 100px;
+} */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+}
+
+.form-container{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    padding-bottom: 60px;
+    background:rgb(199, 198, 198);
+}
+.form-container form{
+    
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: -5px 13px 81px -12px rgba(0,0,0,0.68);
+-webkit-box-shadow: -5px 13px 81px -12px rgba(0,0,0,0.68);
+-moz-box-shadow: -5px 13px 81px -12px rgba(0,0,0,0.68);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+.form-container form h1{
+font-size: 30px;
+text-transform: uppercase;
+margin-bottom: 10px;
+color:#333;
+}
+.form-container form input,
+.form-container select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 20px;
+    margin: 8px 0;
+    background: #eee;
+    padding-right: 0px;
+border: 20px;
+}
+.form-container select option{
+background: #fff;
+}
+.form-container form .form-btn{
+    background: #d0fbd2;
+    color:black;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-container form .form-btn:hover{
+background:rgb(54, 114, 38);
+color:#fff;
+}
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#333;
+}
+.form-container form a{
+color:crimson;
+}
+

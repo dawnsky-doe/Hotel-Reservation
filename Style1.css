@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+:root{
+    --main-color:rgb(54, 114, 38);
+    --green:rgb(54, 114, 38);
+    --black:#13131a;
+    --white:#ffff;
+    --light-bg:#eee;
+    --bg:#b6b5b5;
+    --border:.2rem solid rgb(54, 114, 38);
+    --box-shadow:0 .5rem 1rem rgb(0, 0, 0,.1);;
+    --ff:rgb(238, 238, 238);
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+body{
+    background: var(--bg);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:var(--black);
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--ff);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 10%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.logo span{
+    color: var(--green);
+}
+
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.navbar a:hover{
+    color: var(--green);
+}
+
+
+.icons div{
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.icons :hover{
+    color:var(--green)
+}
+
+.rooms{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding:20rem 10%;
+
+}
+
+.rooms image{
+    flex:1 1 42rem;
+}
+
+.rooms img{
+    position: relative;
+    width: 120%;
+    box-shadow:4rem 4rem 0 rgb(148, 145, 145);
+}
+
+.rooms .content{
+    position: absolute;
+    height: center;  
+    width: 70%;
+    right: -410px;
+}
+
+.rooms .content h3{
+    position: relative;
+    font-size: 4rem;
+    color: var(--green);
+}
+
+.rooms .content span{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding:1rem 0 ;
+    line-height: 2;
+}
+
+.rooms .content .price{
+    color: rgb(11, 11, 11);
+    font-size: 3rem;
+    padding:1rem 0;
+}
+
+.rooms .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.rooms .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+
+
+.footer{
+    padding: 5rem 20%;
+    background:var(--ff);
+    text-align: center;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color:rgb(5, 5, 5);
+    font-weight: lighter;
+    padding:1rem;
+}
+
+
